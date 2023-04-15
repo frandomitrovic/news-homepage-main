@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: var(--Off-white);
 }
 
 .container {
@@ -217,16 +218,25 @@ aside div a {
 }
 
 .bottom {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  grid-gap: 30px;
+  display: flex;
   margin-bottom: 30px;
+}
+
+.bottom a {
+  margin-right: 20px;
 }
 
 
 @media screen and (max-width: 1172px) {
   .container {
     max-width: 96%;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 20px;
+    margin-right: 0;
   }
 }
 
