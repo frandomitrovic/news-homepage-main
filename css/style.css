@@ -41,6 +41,14 @@ header {
   margin-bottom: 55px;
 }
 
+header a img {
+ transition: all 0.2s ease-in-out; 
+}
+
+header a img:hover {
+  transform: scale(1.1);
+ }
+
 nav {
   display: flex;
   align-items: center;
